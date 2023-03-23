@@ -2,3 +2,30 @@
     
     - Using Async Code more Elegantly
 
+400. Whats Async Await All About?
+
+    - 2 Keywords that let us write async code like sync code;
+
+    - About asynchronous code:
+        - We tipically work with promises (using .then());
+        - We could also work with callbacks (it would create the callback hell)
+
+    - It gets more readable with ayncs and 26. Async Await.txt
+
+401. Transforming "Then Catch" to "Async Await"
+    
+    - We set the async when creating the function;
+
+    - Then we await the return, instead of createing a promise;
+
+    - We then set our logic with try and catch
+    
+        exports.getPosts = async (req, res, next) => {
+            try{
+            const totalItems = await Post.find().countDocuments();
+            } catch (err) {
+                //... Error handling
+            }
+        }
+    
+    - Max emphasized that JavaScript is different from other languages, in JS the async await will kinda transform in then() and catch() behind the scenes
