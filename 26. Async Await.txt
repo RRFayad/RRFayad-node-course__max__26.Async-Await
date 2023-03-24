@@ -29,3 +29,10 @@
         }
     
     - Max emphasized that JavaScript is different from other languages, in JS the async await will kinda transform in then() and catch() behind the scenes
+
+    - Also, now we can use await in top level (out of an async function)
+
+Assignment - 11 min video
+
+404. Wrap Up
+    - The JavaScript execution does not change because we are useing async / await
